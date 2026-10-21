@@ -1,4 +1,5 @@
 using Microsoft.Xrm.Sdk;
+using System.Text.RegularExpressions;
 using System;
 
 namespace CustomAPILab
@@ -26,7 +27,20 @@ namespace CustomAPILab
 
             var context = localPluginContext.PluginExecutionContext;
 
-            // TODO: Implement your custom business logic
+            // Get values from the input parameters passed on to the custom API invocation
+            string input = (string)context.InputParameters["StringIn"];
+            string pattern = (string)context.InputParameters["Pattern"];
+
+            // Get the tracing service
+            ITracingService tracingService = (ITracingService)localPluginContext.ServiceProvider.GetService(typeof(ITracingService));
+
+            tracingService.Trace("Provided input: " + input);
+
+            var result = Regex.Match(input, pattern);
+
+            tracingService.Trace("Matching result: " + result.Success);
+
+            context.OutputParameters["Matched"] = result.Success;
 
             // Check for the entity on which the plugin would be registered
             //if (context.InputParameters.Contains("Target") && context.InputParameters["Target"] is Entity)
