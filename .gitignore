@@ -1,0 +1,27 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Strong Name Key files
+*.snk
+
+# Build output directories
+/bin
+/obj
+
+# .NET / Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+/.vs
+/.vscode
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# Local CLI auth profiles and logs
+/.pac
+*.log
+
+# Miscellaneous files
+.env
+*.zip
