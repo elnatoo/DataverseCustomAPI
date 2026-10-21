@@ -22,13 +22,15 @@ Dataverse **Custom API** sample project for learning and testing server-side bus
 
 ## Overview
 
-This repository contains a Dataverse Custom API implementation intended to:
+This repository contains a Dataverse custom API implementation intended to:
 
 - Define a reusable custom message in Dataverse
 - Execute plugin logic through the Dataverse execution pipeline
 - Return structured output values to available callers (Power Automate, JavaScript, SDK, etc.)
 
-This project was made following the *Introduction to Extending Power Platform* module exercise, **Creating a custom API**. This sample custom API is designed for educational purposes, personal practice, and can be extended for real-world scenarios.
+This project was developed as part of the Microsoft Learn module, **Introduction to Extending Power Platform**, based on the [Create a custom API](https://learn.microsoft.com/en-us/training/modules/introduction-power-platform-extend/exercise) practical exercise.
+
+This sample custom API is designed for educational purposes, personal practice, and can be extended for real-world scenarios.
 
 ---
 
