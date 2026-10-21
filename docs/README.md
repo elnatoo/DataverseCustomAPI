@@ -9,8 +9,7 @@ Dataverse **Custom API** sample project for learning and testing server-side bus
 ## Table of Contents
 
 - [Overview](#overview)
-- [Solution Structure](#solution-structure)
-- [Prerequisites](#prerequisites)
+- [Requirements](#requirements)
 - [Local Setup](#local-setup)
 - [Build](#build)
 - [Deploy to Dataverse](#deploy-to-dataverse)
@@ -112,7 +111,7 @@ Authorization: Bearer <token>
 
 ---
 
-## Troubleshooting Tips
+## Troubleshooting
 
 - **Assembly not executing**  
   Verify plugin step registration and message name.
@@ -138,4 +137,4 @@ Authorization: Bearer <token>
 
 ## License
 
-Licensed under the MIT License. See [LICENSE](LICENSE) for details.
+Licensed under the MIT License. See [LICENSE](https://github.com/elnatoo/DataverseCustomAPI/blob/main/LICENSE) for details.
